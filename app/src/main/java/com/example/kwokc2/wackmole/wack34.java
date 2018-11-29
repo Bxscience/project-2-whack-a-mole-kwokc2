@@ -34,7 +34,7 @@ public class wack34 extends AppCompatActivity {
             public void onTick(long millisUntilFinished) {
                 timebox.setText("Time: " + millisUntilFinished / 1000);
                 btnArray.get(rdmMole).setVisibility(View.INVISIBLE);
-                rdmMole = rdm.nextInt(6);
+                rdmMole = rdm.nextInt(12);
                 btnArray.get(rdmMole).setVisibility(View.VISIBLE);
             }
 
