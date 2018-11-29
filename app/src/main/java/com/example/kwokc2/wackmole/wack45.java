@@ -20,6 +20,7 @@ public class wack45 extends AppCompatActivity {
     private ArrayList<ImageButton> btnArray;
     private Random rdm;
     private int rdmMole;
+    private boolean done = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,13 +39,26 @@ public class wack45 extends AppCompatActivity {
                 btnArray.get(rdmMole).setVisibility(View.VISIBLE);
             }
 
-            @Override
+           @Override
             public void onFinish() {
-                btnArray.get(rdmMole).setVisibility(View.INVISIBLE);
-                timebox.setText("Time: 0");
-                end();
+                if (!done) {
+                    done = true;
+                    btnArray.get(rdmMole).setVisibility(View.INVISIBLE);
+                    timebox.setText("Time: 0");
+                    end();
+                }
             }
         }.start();
+
+    }
+    @Override
+    public void onBackPressed() {
+        if (!done) {
+            done = true;
+            btnArray.get(rdmMole).setVisibility(View.INVISIBLE);
+            timebox.setText("Time: 0");
+            end();
+        }
     }
     private void setup()
     {
