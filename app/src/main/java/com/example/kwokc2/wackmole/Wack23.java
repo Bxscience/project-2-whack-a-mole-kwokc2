@@ -21,6 +21,7 @@ public class Wack23 extends AppCompatActivity {
     private Random rdm;
     private int rdmMole;
     private Button btnExit;
+    private boolean done = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,13 +40,26 @@ public class Wack23 extends AppCompatActivity {
                 btnArray.get(rdmMole).setVisibility(View.VISIBLE);
             }
 
-            @Override
+           @Override
             public void onFinish() {
-                btnArray.get(rdmMole).setVisibility(View.INVISIBLE);
-                timebox.setText("Time: 0");
-                end();
+                if (!done) {
+                    done = true;
+                    btnArray.get(rdmMole).setVisibility(View.INVISIBLE);
+                    timebox.setText("Time: 0");
+                    end();
+                }
             }
         }.start();
+
+    }
+    @Override
+    public void onBackPressed() {
+        if (!done) {
+            done = true;
+            btnArray.get(rdmMole).setVisibility(View.INVISIBLE);
+            timebox.setText("Time: 0");
+            end();
+        }
     }
         private void setup()
         {
