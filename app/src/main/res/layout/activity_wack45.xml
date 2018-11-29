@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/grass"
     tools:context=".wack45">
 
     <LinearLayout
@@ -15,7 +16,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="4dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,6 +28,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Score:"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="111dp"
             tools:layout_editor_absoluteY="424dp" />
 
@@ -34,11 +37,13 @@
             android:id="@+id/timebox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Timer:" />
+            android:text="Timer:"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="100dp"
             android:orientation="horizontal">
 
             <ImageButton
@@ -46,6 +51,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@null"
                 android:scaleType="fitCenter"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/bidoof" />
@@ -55,6 +61,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@null"
                 android:scaleType="fitCenter"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/bidoof" />
@@ -64,6 +71,7 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@null"
                 android:scaleType="fitCenter"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/bidoof" />
@@ -73,6 +81,7 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@null"
                 android:scaleType="fitCenter"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/bidoof" />
@@ -80,7 +89,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="100dp"
             android:orientation="horizontal">
 
             <ImageButton
@@ -88,6 +97,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@null"
                 android:scaleType="fitCenter"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/bidoof" />
@@ -97,6 +107,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@null"
                 android:scaleType="fitCenter"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/bidoof" />
@@ -106,6 +117,7 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@null"
                 android:scaleType="fitCenter"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/bidoof" />
@@ -115,6 +127,7 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@null"
                 android:scaleType="fitCenter"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/bidoof" />
@@ -122,7 +135,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="100dp"
             android:orientation="horizontal">
 
             <ImageButton
@@ -130,6 +143,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@null"
                 android:scaleType="fitCenter"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/bidoof" />
@@ -139,6 +153,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@null"
                 android:scaleType="fitCenter"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/bidoof" />
@@ -148,6 +163,7 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@null"
                 android:scaleType="fitCenter"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/bidoof" />
@@ -157,6 +173,7 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@null"
                 android:scaleType="fitCenter"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/bidoof" />
@@ -164,7 +181,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="100dp"
             android:orientation="horizontal">
 
             <ImageButton
@@ -172,6 +189,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@null"
                 android:scaleType="fitCenter"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/bidoof" />
@@ -181,6 +199,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@null"
                 android:scaleType="fitCenter"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/bidoof" />
@@ -190,6 +209,7 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@null"
                 android:scaleType="fitCenter"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/bidoof" />
@@ -199,6 +219,7 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@null"
                 android:scaleType="fitCenter"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/bidoof" />
@@ -207,7 +228,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="100dp"
             android:orientation="horizontal">
 
             <ImageButton
@@ -215,6 +236,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@null"
                 android:scaleType="fitCenter"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/bidoof" />
@@ -224,6 +246,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@null"
                 android:scaleType="fitCenter"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/bidoof" />
@@ -233,6 +256,7 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@null"
                 android:scaleType="fitCenter"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/bidoof" />
@@ -242,6 +266,7 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@null"
                 android:scaleType="fitCenter"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/bidoof" />
